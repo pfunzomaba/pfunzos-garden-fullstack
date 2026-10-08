@@ -123,7 +123,7 @@ MySQL
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/pfunzos-garden-fullstack.git
+git clone https://github.com/pfunzomaba/pfunzos-garden-fullstack.git
 ```
 
 2. Move the project into:
