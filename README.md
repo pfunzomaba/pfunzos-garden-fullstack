@@ -109,6 +109,7 @@ MySQL
 ### Checkout
 
 ![Pfunzo's Garden Checkout](screenshots/checkout.png)
+https://github.com/pfunzomaba/pfunzos-garden-fullstack/blob/main/screenshots/home%20page.png
 
 ## 🚀 Running the Project Locally
 
