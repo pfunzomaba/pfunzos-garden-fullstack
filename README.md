@@ -9,6 +9,7 @@ The website allows customers to browse available produce, add products to a shop
 Pfunzo's Garden E-commerce was developed to create an online platform where customers can view and order fresh vegetables, fruits, herbs and seedlings.
 
 The project combines a responsive frontend with a PHP backend and MySQL database.
+This project demonstrates my practical skills in web development, backend programming, and database integration.
 
 ## ✨ Features
 
@@ -155,8 +156,7 @@ http://localhost/pfunzos-garden/products.html
 The project uses PHP to connect to MySQL.
 
 Update the database connection settings in the PHP database connection file according to your local environment.
-
-Do not commit production passwords or sensitive database credentials to GitHub.
+### Note: The database must be created and configured locally. GitHub does not run PHP or provide a MySQL database for this project by default.###
 
 ## 📚 What I Learned
 
@@ -182,5 +182,7 @@ Future versions could include:
 ## 👩🏽‍💻 Developer
 
 **Pfunzo's Garden full stack**
+Developed as a practical web development and database integration project.
 
-Built as a full-stack web development project using HTML, CSS, JavaScript, PHP and MySQL.
+License
+This project is available for learning and portfolio demonstration. Contact the author before reusing project assets or content.
