@@ -96,20 +96,19 @@ MySQL
 
 ### Homepage
 
-![Pfunzo's Garden Homepage](screenshots/homepage.png)
+![Pfunzo's Garden Homepage](screenshots/home-page.png)
 
 ### Products / Harvest
 
-![Pfunzo's Garden Products](screenshots/products.png)
+![Pfunzo's Garden Products](screenshots/harvest.png)
 
 ### Shopping Cart
 
-![Pfunzo's Garden Cart](screenshots/cart.png)
+![Pfunzo's Garden Cart](screenshots/cart-page.png)
 
 ### Checkout
 
 ![Pfunzo's Garden Checkout](screenshots/checkout.png)
-https://github.com/pfunzomaba/pfunzos-garden-fullstack/blob/main/screenshots/home%20page.png
 
 ## 🚀 Running the Project Locally
 
