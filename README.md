@@ -100,7 +100,7 @@ MySQL
 
 ### Products / Harvest
 
-![Pfunzo's Garden Products](screenshots/harvest.png)
+![Pfunzo's Garden Products](screenshots/harvest-page.png)
 
 ### Shopping Cart
 
