@@ -1,0 +1,188 @@
+
+
+.section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  /**/
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+.section-header span {
+  color: #f28c38;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.section-header h1 {
+  /*font-size: 42px;*/
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.form-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  flex: 1;
+  min-width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.left-card {
+  background: #f0ede6;
+}
+
+.card h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #6ca441
+}
+
+.contact-item {
+  margin-bottom: 25px;
+}
+
+.contact-item h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-item p {
+ /* font-size: 14px;*/
+  color: #555;
+}
+
+.contact-item{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.icon-box{
+  width: 60px;
+  height: 60px;
+  background: #f5f5f5;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box i{
+  color: #6ca441;
+  font-size: 22px;
+}
+
+
+.did-you-know {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+  border: 1px solid #e0ded8;
+}
+
+.did-you-know h4 {
+  color: #f28c38;
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #6ca441;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+.form-container button:hover {
+  background: #65b12f;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background: #6ca441;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .form-container {
+    display:block;
+    gap: 40px;
+  
+}
+
+  .card{
+    margin: 10px 30px
+  }
+/*
+  .contact-item{
+    align-items:  flex-start;
+  }*/
+
+  .icon-box{
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .section{
+    padding: 0;
+  }
+
+  .card{
+    margin: 10px 0;
+    padding: 40px 10px;
+    
+  }
+  
+
+}
