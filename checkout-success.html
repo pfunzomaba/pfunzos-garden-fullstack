@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Order Confirmed - Pfunzo's Garden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        body {
+            background: linear-gradient(180deg, #f6f6f2 0%, #edf5ea 100%);
+        }
+
+        main {
+            min-height: calc(100vh - 220px);
+            display: grid;
+            place-items: center;
+            padding: 100px 20px 60px;
+        }
+
+        .success-card {
+            max-width: 760px;
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid rgba(95, 164, 58, 0.15);
+            border-radius: 28px;
+            box-shadow: 0 16px 40px rgba(46, 74, 53, 0.12);
+            padding: 42px 28px;
+            text-align: center;
+        }
+
+        .success-badge {
+            width: 88px;
+            height: 88px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: rgba(95, 164, 58, 0.12);
+            color: #3e7d28;
+            font-size: 2.4rem;
+        }
+
+        .success-card h1 {
+            font-size: clamp(2.1rem, 5vw, 3.2rem);
+            color: #2e4a35;
+            margin-bottom: 18px;
+        }
+
+        #message {
+            font-size: 1.08rem;
+            line-height: 1.7;
+            color: #505d52;
+            margin: 0 auto 24px;
+            max-width: 560px;
+        }
+
+        #message strong {
+            color: #2e4a35;
+        }
+
+        .success-actions {
+            margin-top: 10px;
+        }
+
+        .success-actions a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 999px;
+            background: #5fa43a;
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+            box-shadow: 0 10px 22px rgba(95, 164, 58, 0.22);
+        }
+
+        .success-actions a:hover {
+            transform: translateY(-1px);
+            opacity: 0.98;
+        }
+
+        @media (max-width: 600px) {
+            .success-card {
+                padding: 32px 20px;
+            }
+
+            .success-badge {
+                width: 72px;
+                height: 72px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo-area">
+        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+        <h1>Pfunzo's <span>Garden</span></h1>
+    </div>
+</header>
+<main>
+    <div class="success-card">
+        <div class="success-badge">&#10003;</div>
+        <h1>Thank you for your order</h1>
+        <p id="message">Processing...</p>
+        <div class="success-actions">
+            <a href="products.html">Continue shopping</a>
+        </div>
+    </div>
+</main>
+<script>
+(function(){
+    const params = new URLSearchParams(location.search);
+    const orderId = params.get('order_id');
+    const msg = document.getElementById('message');
+    if(orderId){
+        msg.innerHTML = `Your order number is <strong>${orderId}</strong>. We've emailed you the details.`;
+    } else {
+        msg.textContent = 'Your order has been received.';
+    }
+    // clear cart 
+    try{ localStorage.removeItem('cart'); }catch(e){}
+})();
+</script>
+</body>
+</html>

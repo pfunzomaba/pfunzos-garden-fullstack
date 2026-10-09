@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pfunzo's Garden | Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <a href="index.html">
+            <img src="assets/images/logo.png" 
+                 alt="Pfunzo's Garden logo: fresh spinach leaves arranged in a purple bucket">
+        </a>
+        <h1>Pfunzo's <span>Garden</span></h1>
+    </div>
+
+    <nav id="menu">
+       
+        <ul id="nav-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="products.html">Harvest</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+            </li>
+            <li>
+                <a href="products.html">
+                    <button class="btn">Shop Now</button>
+                </a>
+            </li>
+
+            
+        </ul>
+
+        <div class="mobile-icons">
+
+                <div class="mobile-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                 <div class="menu-toggle" id="hamburger"  onclick="toggleMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i> 
+                </div>
+
+         </div>
+    </nav>
+</header>
+
+
+    <main>
+        <!--    HERO     IMAGE-->
+        <div class="hero">
+            <img src="assets/images/hero.jpg" alt="Banana tree" fetchpriority="high" decoding="async">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content animate">
+                <span class="tagline">Fresh from Thohoyandou since 2021</span>
+
+                <h1>
+                    Cultivating <span class="green">Health</span> &<br>
+                    Harvesting <span class="orange">Joy</span>
+                </h1>
+
+                <p>
+                    Pfunzo's garden has been a little symbol of nutrition and freshness.
+                    We bring the farm directly to your table with love.
+                </p>
+                <p>
+                    From our soil to your soul, we cultivate health and harvest joy in every bite.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="btn primary" href="products.html" >View Our Harvest <i class="fas fa-arrow-right"></i></a>
+                    <a  href="about-us.html" class="btn secondary">Our Story</a>
+                </div>
+
+            </div>
+            <div class="down-arrow" aria-label="Scroll down">
+                    <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          
+        </div>
+
+        <!-- Mission -->
+        <div class="product-mission">
+            <h3>Why choose us</h3>
+            <h2>Grown with care, Picked for you.</h2>
+
+            <section class="garden-morale">
+            
+                <div class="product-category organic" >
+                    <i class="fas fa-leaf fa-2x"></i>         <!-- organic -->
+                    <h2>100% Organic</h2>
+                    <p>Grown naturally without harmful chemicals, ensuring pure nutrition for your family.</p>
+
+                </div>
+
+                <div class="product-category local">
+                    <i class="fas fa-map-marker-alt fa-2x"></i> <!-- local -->
+                    <h2>Locally Grown</h2>
+                    <p>Rooted in Thohoyandou soil, supporting local agriculture and community.</p>
+
+                </div>
+
+                <div class="product-category harvest">
+                    <i class="fas fa-carrot fa-2x"></i>        <!-- fresh harvest -->
+                    <h2>Fresh Harvest</h2>
+                    <p>Picked at the peak of ripeness and delivered fresh to maintain maximum flavour.</p>
+
+                </div>
+                
+            </section>
+        
+        </div>
+       
+        <!-- Products -->
+        <div class="products">
+            <h3 class="products-h3">Fresh from the garden</h3>
+            <div class="products-header">
+                 <h2 >Seasonal Favorites
+                
+            </h2>
+            <a href="products.html" class="view-products">
+                    View All Products
+                    <i class="fas fa-arrow-right"></i>
+                 </a>
+            </div>
+           
+            
+           <div class="product-grid">
+                <div class="product-card">
+                    <img src="assets/images/cabbage.jpg" alt="Fresh cabbage from the garden">
+                    <h3 class="top-header"> Vegetable</h3>
+                    <h2>Cabbage</h2>
+                    <p>Fresh, crisp cabbage grown with care in our garden.</p>
+                    <!--<p>In Season Now</p>
+                    <a href="products.html"></a>-->
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/images/banana.jpg" alt="Fresh banana from the garden">
+                    <h3 class="top-header">Fruit</h3>
+                    <h2>Banana</h2>
+                    <p>A variety of sweet and healthy fruits from our trees.</p>
+                   <!-- <p>In Season Now</p>
+                    <a href="products.html"></a>-->
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/images/herbs.jpeg" alt="Fresh Coriander">
+                    <h3 class="top-header">Herb</h3>
+                    <h2>Coriander</h2>
+                    <p>Fragrant coriander (dhania) to spice up your cooking.</p>
+                    <!--<p>In Season Now</p>
+                    <a href="products.html"> </a>-->
+                </div>
+           </div> 
+           <div class="mobile-products-view">
+                <a href="products.html">
+                    View All Products
+                    <i class="fas fa-arrow-right"></i>
+                 </a>
+           </div>
+           </div>
+        </div>
+           
+        <!--Process-->
+        <section class="process">
+            <h3>OUR PROCESS</h3>
+            <h2>Seed to Table Journey</h2>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="icon-box">
+                        <span class="number">01</span>
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3>Careful Sowing</h3>
+                    <p>We select the finest non-GMO seeds, perfectly suited for Thohoyandou's rich soil.</p>
+                </div>
+
+                <div class="step">
+                    <div class="icon-box">
+                        <span class="number">02</span>
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3>Natural Growth</h3>
+                    <p>Our plants grow under the Limpopo sun, nourished by pure water and organic compost.</p>
+                </div>
+
+                <div class="step">
+                    <div class="icon-box">
+                        <span class="number">03</span>
+                        <i class="fa-solid fa-hand-holding-droplet"></i>
+                    </div>
+                    <h3>Peak Harvest</h3>
+                    <p>Every vegetable and fruit is hand-picked at its nutritional peak for maximum flavor.</p>
+                </div>
+
+                <div class="step">
+                    <div class="icon-box">
+                        <span class="number">04</span>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                    <h3>Direct to You</h3>
+                    <p>From our garden to your kitchen, ensuring the shortest journey for the freshest taste.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+       
+
+        <!--Testimonials-->
+        <section class="testimonials">
+
+            <div class="testimonials-header">
+                <h3>Kind Words</h3>
+                <h2>What Our Neighbors Say</h2>
+            </div>
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        “The freshest spinach in Thohoyandou! You can really taste the 
+                        difference between these and store-bought vegetables.”
+                    </p>
+
+                    <div class="testimonial-user">
+                        <div class="user-avatar">R</div>
+                        <div class="user-info">
+                            <h4>Ronald Mphaphuli</h4>
+                            <span>Local Resident</span>
+                        </div>
+                    </div>
+                </div>
+
+            
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    “Pfunzo’s Garden has become my go-to for herbs. The coriander 
+                    is so fragrant and stays fresh for much longer.”
+                </p>
+
+                <div class="testimonial-user">
+                    <div class="user-avatar">T</div>
+                    <div class="user-info">
+                        <h4>Takalan Mudau</h4>
+                        <span>Home Cook</span>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    “I love knowing exactly where my food comes from. The quality 
+                    is consistent and the service is always friendly.”
+                </p>
+
+                <div class="testimonial-user">
+                    <div class="user-avatar">M</div>
+                    <div class="user-info">
+                        <h4>Mulalo Maba</h4>
+                        <span>Health Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+        
+    </main>
+
+    <footer >
+        <div id="footer-logo">
+          
+            <div class="logo-row">
+                <a href="index.html"><img src="assets/images/logo.png" alt="Pfunzo's Garden logo: fresh spinach leaves in a purple bucket, representing organic farming and natural produce from Thohoyandou"></a>
+                <h1>Pfunzo's Garden</h1>
+            </div>
+            <p>Founded in 2021. A symbol of nutrition and freshness in Thohoyandou, cultivating healthy communities one harvest at a time.</p>
+            
+        </div>
+
+        <div id="footer-explore">
+            <h2>Explore</h2>
+            <ul>
+            
+                <li><a href="about-us.html">About </a></li>
+                <li><a href="product.html">Our Harvest</a></li>
+                <li><a href="contact-us.html">Visit Us</a></li>
+            </ul>
+        </div>
+
+      
+
+        <div id="footer-contact">
+            <h2>Contact Us</h2>
+            <ul>
+            
+                <li><i class="fas fa-map-marker-alt"></i>Thohoyandou, Limpopo</li>
+                <li> <i class="fas fa-phone"></i><a href="tel:+27123456789"> +27 12 345 6789</a></li>
+                <li><i class="fas fa-envelope"></i><a href="mailto:hello@pfunzogarden.co.za">hello@pfunzogarden.co.za</a></li>
+            </ul>
+        </div>
+
+       
+        <div id="footer-social">
+            <h2>Follow Us</h2>
+            
+            <div class="social-icons">  
+                 <a href="https://www.twitter.com/pfunzogarden" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/pfunzogarden" target="_blank">  <i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pfunzogarden" target="_blank"><i class="fab fa-instagram"></i> </a>
+            
+            </div>
+           
+        </div>
+
+  
+        
+        
+    </footer>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>

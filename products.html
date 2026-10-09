@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Our Harvest | Pfunzo's Garden  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"integrity="sha512‑…" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+
+
+<header>
+    <div class="logo-area">
+        <a href="index.html">
+            <img src="assets/images/logo.png" loading="lazy" 
+                 alt="Pfunzo's Garden logo: fresh spinach leaves arranged in a purple bucket">
+        </a>
+        <h1>Pfunzo's <span>Garden</span></h1>
+    </div>
+
+    <nav id="menu">
+       
+        <ul id="nav-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="products.html">Harvest</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li class="cart-icon">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+            <li>
+                <a href="products.html">
+                    <button class="btn">Shop Now</button>
+                </a>
+            </li>
+
+            
+        </ul>
+
+        <div class="mobile-icons">
+
+                <div class="mobile-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                 <div class="menu-toggle" id="hamburger"  onclick="toggleMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i> 
+                </div>
+
+         </div>
+    </nav>
+</header>
+
+
+<main>
+    <section class="produce-section">
+
+        <div class="produce-header">
+            <div>
+            <p class="section-subtitle">Fresh Harvest</p>
+            <h2>Our Produce</h2>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="vegetable">Vegetables</button>
+                <button data-filter="fruit">Fruits</button>
+                <button data-filter="herb">Herbs</button>
+                <button data-filter="seedlings">Seedlings</button>
+            </div>
+        </div>
+
+        <div class="produce-grid" id="produce-grid">
+
+        </div>
+        <div class="load-more-container">
+            <button id="load-more-btn">Load More</button>
+        </div>
+     </section>
+
+        
+
+</main>
+
+    <footer >
+        <div id="footer-logo">
+            <div class="logo-row">
+                <a href="index.html"><img src="assets/images/logo.png" alt="Pfunzo's Garden logo: fresh spinach leaves in a purple bucket, representing organic farming and natural produce from Thohoyandou" loading="lazy"></a>
+                <h1>Pfunzo's Garden</h1>
+            </div>
+            <p>Founded in 2021. A symbol of nutrition and freshness in Thohoyandou, cultivating healthy communities one harvest at a time.</p>
+            
+        </div>
+
+        <div id="footer-explore">
+            <h2>Explore</h2>
+            <ul>
+            
+                <li><a href="about-us.html">About </a></li>
+                <li><a href="product.html">Our Harvest</a></li>
+                <li><a href="contact-us.html">Visit Us</a></li>
+            </ul>
+        </div>
+
+      
+
+        <div id="footer-contact">
+            <h2>Contact Us</h2>
+            <ul>
+            
+                <li><i class="fas fa-map-marker-alt"></i>Thohoyandou, Limpopo</li>
+                <li> <i class="fas fa-phone"></i><a href="tel:+27123456789"> +27 12 345 6789</a></li>
+                <li><i class="fas fa-envelope"></i><a href="mailto:hello@pfunzogarden.co.za">hello@pfunzogarden.co.za</a></li>
+            </ul>
+        </div>
+
+       
+        <div id="footer-social">
+            <h2>Follow Us</h2>
+            
+            <div class="social-icons">  
+                 <a href="https://www.twitter.com/pfunzogarden" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/pfunzogarden" target="_blank">  <i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pfunzogarden" target="_blank"><i class="fab fa-instagram"></i> </a>
+            
+            </div>
+           
+        </div>
+
+  
+        
+        
+    </footer>
+
+  <script src="scripts/navigation.js"></script>
+  <script src="scripts/products.js"></script>
+
+
+</body>
+</html>

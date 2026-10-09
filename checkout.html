@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout - Pfunzo's Garden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="logo-area">
+        <a href="index.html"><img src="assets/images/logo.png" alt="Pfunzo's Garden logo"></a>
+        <h1>Pfunzo's <span>Garden</span></h1>
+    </div>
+    <nav id="menu">
+         <ul id="nav-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="products.html">Harvest</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+            </li>
+            <li>
+                <a href="products.html">
+                    <button class="btn">Shop Now</button>
+                </a>
+            </li>
+
+            
+        </ul>
+
+        <div class="mobile-icons">
+
+                <div class="mobile-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+
+                 <div class="menu-toggle" id="hamburger"  onclick="toggleMenu()">
+                    <i class="fas fa-bars" id="menu-icon"></i> 
+                </div>
+
+         </div>
+    </nav>
+</header>
+<main class="checkout-page">
+    <div class="checkout-header">
+        <p class="eyebrow">Fresh produce delivery</p>
+        <h1>Checkout</h1>
+    </div>
+
+    <div class="checkout-layout">
+        <section class="checkout-panel checkout-order-panel">
+            <h2>Your Order</h2>
+
+            <div id="checkout-items" class="checkout-items">
+                <!-- Products displayed here -->
+            </div>
+
+            <div class="checkout-summary">
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="checkout-subtotal">R0.00</span>
+                </div>
+
+                <div class="summary-line">
+                    <span>Shipping</span>
+                    <span id="checkout-shipping">R0.00</span>
+                </div>
+
+                <div class="summary-line total-line">
+                    <strong>Total</strong>
+                    <strong id="checkout-total">R0.00</strong>
+                </div>
+            </div>
+
+            <div class="checkout-actions">
+                <button type="button" id="back-to-cart" class="secondary-btn">Back to Cart</button>
+            </div>
+        </section>
+
+        <section class="checkout-panel checkout-form-panel">
+            <h2>Customer Details</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="customer-name">Full Name</label>
+                    <input type="text" id="customer-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="customer-email">Email</label>
+                    <input type="email" id="customer-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="customer-phone">Phone Number</label>
+                    <input type="tel" id="customer-phone" name="phone" required>
+                </div>
+                <div class="summary-line total-line order-total-row">
+                    <span>Total</span>
+                    <strong id="checkout-total-form">R0.00</strong>
+                </div>
+                <button type="submit" class="checkout-submit">Place Order</button>
+            </form>
+        </section>
+    </div>
+</main>
+<footer >
+        <div id="footer-logo">
+          
+            <div class="logo-row">
+                <a href="index.html"><img src="assets/images/logo.png" alt="Pfunzo's Garden logo: fresh spinach leaves in a purple bucket, representing organic farming and natural produce from Thohoyandou"></a>
+                <h1>Pfunzo's Garden</h1>
+            </div>
+            <p>Founded in 2021. A symbol of nutrition and freshness in Thohoyandou, cultivating healthy communities one harvest at a time.</p>
+            
+        </div>
+
+        <div id="footer-explore">
+            <h2>Explore</h2>
+            <ul>
+            
+                <li><a href="about-us.html">About </a></li>
+                <li><a href="product.html">Our Harvest</a></li>
+                <li><a href="contact-us.html">Visit Us</a></li>
+            </ul>
+        </div>
+
+      
+
+        <div id="footer-contact">
+            <h2>Contact Us</h2>
+            <ul>
+            
+                <li><i class="fas fa-map-marker-alt"></i>Thohoyandou, Limpopo</li>
+                <li> <i class="fas fa-phone"></i><a href="tel:+27123456789"> +27 12 345 6789</a></li>
+                <li><i class="fas fa-envelope"></i><a href="mailto:hello@pfunzogarden.co.za">hello@pfunzogarden.co.za</a></li>
+            </ul>
+        </div>
+
+       
+        <div id="footer-social">
+            <h2>Follow Us</h2>
+            
+            <div class="social-icons">  
+                 <a href="https://www.twitter.com/pfunzogarden" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/pfunzogarden" target="_blank">  <i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pfunzogarden" target="_blank"><i class="fab fa-instagram"></i> </a>
+            
+            </div>
+           
+        </div>
+
+</footer>
+<script src="scripts/navigation.js"></script>
+<script src="scripts/checkout.js"></script>
+</body>
+</html>
